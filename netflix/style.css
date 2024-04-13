@@ -9,6 +9,10 @@
 
 }
 
+:root{
+    --bacground:black;
+}
+
 nav{
     width:100%;
     height:100px;
@@ -38,10 +42,13 @@ nav{
     width:150px;
     height:80%;
 }
+main{
+    overflow:  hidden;
+}
 .main{
     height:110vh;
     width:100%;
-    background-image: url(source/background-image.jpg);
+    background-image: url(source/background-image2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -77,6 +84,19 @@ nav{
     margin:16px 0 0;
 }
 
+#sign-in,#select{
+    width:85px;
+    height: 35px;
+    background-color: red;
+    border-radius: 4px;
+    border:none;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+
 .form{
     width:80vw;
     height:80px;
@@ -110,7 +130,7 @@ nav{
     top:4px;
     transform:scale(0.8);
 }
-#submit{
+.submit{
     width:210px;
     max-width:210px;
     height: 56px;
@@ -123,19 +143,18 @@ nav{
     text-transform: capitalize;
     font-weight: bolder;
 }
-
-#submit:hover{
-    background-color: rgb(192, 0, 0);
+.hover-button:hover{
+    background-color: rgb(192, 3, 0);
 }
 
 .seprator{
     width:100%;
     height:15px;
-    background-color:rgb(19, 19, 19);
+    background-color:rgb(49, 43, 43);
 }
 
 .main-2{
-    background-color: black;
+    background-color: var(--bacground);
     height:2000px;
     width:100vw;
     max-width: 100%;
@@ -185,7 +204,7 @@ nav{
     align-items: flex-start;
 }
 
-.box2>video{
+.box2>#video1{
     width:75%;
     height:70%;
     position: absolute;
@@ -211,13 +230,105 @@ nav{
 
 }
 
+#video2{
+    width:65%;
+    height:64%;
+    position:absolute;
+    top:0;
+}
+
+.main3{
+    width:100vw;
+    height:800px;
+    background-color: var(--bacground);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+   
+}
+.main3 h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    padding-top:40px;
+}
+.main3-container{
+    width:80%;
+    height:80%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    /* background-color: ; */
+}
+
+.main3-container > .question-box{
+    width:100%;
+    height:70px;
+    background-color: rgb(28, 28, 28);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-indent: 20px;
+    font-size: 1.6rem;
+    font-weight:500;
+    text-transform: capitalize;
+}
+.main3-container  .question-box span{
+    padding:20px;
+}
+.question-box:hover{
+    background-color:rgb(30, 25, 25) ;
+}
+
+[alt="plus"]{
+    filter:invert(100%);
+}
+
+.main3-footer{
+    /* background-color: aqua; */
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+}
+
+.main3-footer>h5{
+    font-size: 1rem;
+}
+
+.footer-buttons3{
+    display: flex;
+    width:100%;
+    height:60px;
+    flex-direction: row;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.submit2{
+    width:210px;
+    max-width:210px;
+    height: 56px;
+    background-color: rgb(255, 0, 0);
+    color:white;
+    border:none;
+    outline: none;
+    border-radius:5px;
+    font-size:1.5rem;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
 @media (max-width:600px){
+    
+    
     .nav-div span >img{
         transform: scale(0.8);
     }
-    .main{
-        height:70vh;
-    }
+    
     .form{
         flex-wrap: wrap;
         margin:15px auto;
@@ -226,7 +337,7 @@ nav{
         width:80vw;
         margin:auto;
     }
-    #submit{
+    .submit{
         width:150px;
         height:50px;
         margin-top:10px;
@@ -235,9 +346,23 @@ nav{
     .box1{
         flex-wrap: wrap;
     }
+    .main3-container > .question-box{
+        font-size: 1.3rem;
+    }
 }
 
-@media (width<900px) {
+@media (max-width:900px) {
+    
+    .main3{
+        height:1000px;
+    }
+    .submit2{
+        width:70%;
+        height:70%;
+    }
+    .main{
+        height:70vh;
+    }
     .box>.box1{
         height: 40%;
     }
@@ -261,6 +386,15 @@ nav{
     }
     .box1>p,h2{
         padding:10px 5px;
+    }
+
+    #select>span{
+        
+        display: none;
+    }
+    #select{
+        width:45px;
+        height:35px;
     }
     
 }
