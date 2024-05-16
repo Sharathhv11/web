@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tic tac toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="main">
+        <div class="image">
+          <figure>
+            <img src="./source/image.svg" alt="tic tac toe" id="logo" />
+          </figure>
+        </div>
+        <div id="play-board">
+        <div class="board-container">
+            <div class="playerNames">
+                <div id="player-1">
+                    <span></span>
+                    <span id="scoreCard1"><span></span><span></span></span>
+                </div>
+                <div id="player-2">
+                    <span></span>
+                    <span id="scoreCard2"><span></span><span></span></span>
+                </div>
+            </div>
+          <div class="board">
+            <div data-identity="1" class=""></div>
+            <div data-identity="2" class=""></div>
+            <div data-identity="3" class=""></div>
+            <div data-identity="4" class=""></div>
+            <div data-identity="5" class=""></div>
+            <div data-identity="6" class=""></div>
+            <div data-identity="7" class=""></div>
+            <div data-identity="8" class=""></div>
+            <div data-identity="9" class=""></div>
+          </div>
+          <h1 id="win-indicate"></h1>
+        </div>
+        <button id="reset" >clear board!</button>
+      </div>
+      </div>
+    </main>
+    <script src="play.js"></script>
+  </body>
+</html>
