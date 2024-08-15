@@ -1,0 +1,58 @@
+[
+  {
+    "name": "intersteller",
+    "ID": 1000,
+    "releasedYear": 2014,
+    "duriation": 120,
+    "cerificate": "UA",
+    "rating": { "imdb": 8.7, "rotten tomatoes": 9 }
+  },
+  {
+    "name": "The Dark Knight",
+    "ID": 1002,
+    "releasedYear": 2008,
+    "duriation": 163,
+    "cerificate": "UA",
+    "rating": { "imdb": 9, "rotten tomatoes": 9 }
+  },
+  {
+    "name": "John Wick",
+    "ID": 1004,
+    "releasedYear": 2014,
+    "duriation": 170,
+    "cerificate": "A",
+    "rating": { "imdb": 8, "rotten tomatoes": 8.5 }
+  },
+  {
+    "name": "The martian",
+    "releasedYear": 2016,
+    "duriation": 120,
+    "cerificate": "UA",
+    "rating": { "imdb": 8.7, "rotten tomatoes": 9 },
+    "ID": 1006
+  },
+  {
+    "name": "Fight club",
+    "releasedYear": 1999,
+    "duriation": 159,
+    "cerificate": "A",
+    "rating": { "imdb": 8.8, "rotten tomatoes": 8 },
+    "ID": 1008
+  },
+  {
+    "name": "The matrix",
+    "releasedYear": 1999,
+    "duriation": 149,
+    "cerificate": "UA",
+    "rating": { "imdb": 9, "rotten tomatoes": 8 },
+    "ID": 1010
+  },
+  {
+    "name": "K.G.F chapter 2",
+    "releasedYear": 2022,
+    "duriation": 164,
+    "cerificate": "UA",
+    "rating": { "imdb": 8.3, "rotten tomatoes": 8 },
+    "ID": 1012
+  }
+]

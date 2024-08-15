@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Movies API</h1>
+        <p>This is a simple web API built with Express.js that provides CRUD (Create, Read, Update, Delete) operations for a movie database stored in a <code>movies.json</code> file. This project serves as a basic introduction to backend development with Node.js and Express.</p>
+        
+        <h2>Features</h2>
+        <ul>
+            <li><strong>GET /api/v1/movies</strong>: Retrieves a list of all movies.</li>
+            <li><strong>GET /api/v1/movies/:id</strong>: Retrieves details of a specific movie by its ID.</li>
+            <li><strong>POST /api/v1/movies</strong>: Adds a new movie to the database.</li>
+            <li><strong>PATCH /api/v1/movies/:id</strong>: Updates specific details of an existing movie.</li>
+            <li><strong>DELETE /api/v1/movies/:id</strong>: Deletes a movie from the database.</li>
+        </ul>
+        
+        <h2>Getting Started</h2>
+        <h3>Prerequisites</h3>
+        <p><strong>Node.js</strong>: Ensure you have Node.js installed on your machine.</p>
+        
+        <h3>Installation</h3>
+        <ol>
+            <li><strong>Clone the repository:</strong></li>
+            <pre><code>git clone https://github.com/yourusername/movies-api.git</code></pre>
+            
+            <li><strong>Navigate into the project directory:</strong></li>
+            <pre><code>cd movies-api</code></pre>
+            
+            <li><strong>Install the required dependencies:</strong></li>
+            <pre><code>npm install</code></pre>
+            
+            <li><strong>Start the server with the following command:</strong></li>
+            <pre><code>npm start</code></pre>
+            
+            <li><strong>Server will run on:</strong></li>
+            <pre><code>http://localhost:8080</code></pre>
+        </ol>
+    </div>
+</body>
+</html>
