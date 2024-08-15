@@ -21,7 +21,7 @@ This is a simple web API built with Express.js that provides CRUD (Create, Read,
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/movies-api.git
+   git clone https://github.com/Sharathhv11/web.git
 
 2. **Navigate into the project directory**
    ```bash
